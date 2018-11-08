@@ -6,7 +6,7 @@
     <groupId>com.tuncerbasaran</groupId>
     <artifactId>workshop</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <packaging>jar</packaging>
+    <packaging>war</packaging>
 
     <name>workshop</name>
     <description>Demo project for Spring Boot project</description>
@@ -78,7 +78,7 @@
                                 <copy todir="${project.build.directory}/${elasticbeanstalk.artifact.name}/"
                                       overwrite="false">
                                     <fileset dir="${project.build.directory}/"
-                                             includes="${project.build.finalName}.jar"/>
+                                             includes="${project.build.finalName}.war"/>
                                     <fileset dir="${project.basedir}/.elasticbeanstalk/" includes=".ebextensions/**"/>
                                     <fileset dir="${project.basedir}/.elasticbeanstalk/" includes="Procfile"/>
                                 </copy>
