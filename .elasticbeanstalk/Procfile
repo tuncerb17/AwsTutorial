@@ -1,1 +1,1 @@
-web: java -Dspring.profiles.active=prod -Djava.security.egd=file:/dev/./urandom -war workshop-0.0.1-SNAPSHOT.war
+web: java -Dspring.profiles.active=prod -Djava.security.egd=file:/dev/./urandom -jar workshop-0.0.1-SNAPSHOT.jar
